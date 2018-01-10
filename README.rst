@@ -1,3 +1,6 @@
+.. image:: https://api.travis-ci.org/bozoh/console_progressbar.svg?branch=master
+    :target: https://travis-ci.org/bozoh/console_progressbar
+
 ====================
 Console Progress Bar
 ====================
