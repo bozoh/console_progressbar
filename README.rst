@@ -12,8 +12,8 @@ Usage
 
 Here a very simple sample
 
-    import time 
-    from console_progressbar import ProgressBar 
+    import time  
+    from console_progressbar import ProgressBar  
 
     pb = ProgressBar(total=100,prefix='Here', suffix='Now', decimals=3, length=50, fill='X') 
     pb.print_progress_bar(2) 
