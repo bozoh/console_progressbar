@@ -8,6 +8,7 @@ __pycache__/
 *.so
 *~
 .eggs
+.vscode
 # due to using tox and pytest
 .tox
 .cache
