@@ -12,8 +12,7 @@ Usage
 
 Here a very simple sample:
 
-.. code-block:: python
-    :linenos:
+::
 
     import time
     from console_progressbar import ProgressBar
@@ -33,13 +32,11 @@ Here a very simple sample:
 Parameters Description
 ----------------------
 
-params:
+params::
 
-.. hlist::
-    :columns: 3
-    total       - Required  : total iterations (Int) 
-    prefix      - Optional  : prefix string (Str) 
-    suffix      - Optional  : suffix string (Str) 
-    decimals    - Optional  : positive number of decimals in percent complete (Int) 
-    length      - Optional  : character length of bar (Int) 
-    fill        - Optional  : bar fill character (Str) 
+    total       - Required  : total iterations (Int)
+    prefix      - Optional  : prefix string (Str)
+    suffix      - Optional  : suffix string (Str)
+    decimals    - Optional  : positive number of decimals in percent complete (Int)
+    length      - Optional  : character length of bar (Int)
+    fill        - Optional  : bar fill character (Str)
