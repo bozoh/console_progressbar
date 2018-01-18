@@ -20,6 +20,7 @@ class ProgressBar(object):
         self.__length = length
         self.__fill = fill
         self.__total = total
+        self.__iteration = 0
 
     def generate_pbar(self, iteration):
         """
@@ -43,3 +44,9 @@ class ProgressBar(object):
         # Print New Line on Complete
         if iteration == self.__total:
             print()
+
+    def next(self):
+        """Print next interation progress bar
+        """
+        self.print_progress_bar(self.__iteration)
+        self.__iteration += 1

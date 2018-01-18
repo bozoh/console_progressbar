@@ -7,7 +7,7 @@ from console_progressbar.progressbar import ProgressBar
 
 
 __author__ = 'Carlos Alexandre S. da Fonseca'
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 __date__ = '2018-01-11'  # YYYY-MM-DD
 
 _DEBUG_MODE = False
