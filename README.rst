@@ -40,3 +40,4 @@ params::
     decimals    - Optional  : positive number of decimals in percent complete (Int)
     length      - Optional  : character length of bar (Int)
     fill        - Optional  : bar fill character (Str)
+    zfill       - Optional  : bar zero fill character (Str)
