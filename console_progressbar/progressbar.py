@@ -2,6 +2,10 @@
 '''
     Simple progress bar for console
 '''
+from __future__ import print_function
+import sys
+
+
 class ProgressBar(object):
     """
     Create terminal progress bar
@@ -42,6 +46,7 @@ class ProgressBar(object):
         iteration   - Required  : current iteration (Int)
         """
         print('\r%s' % (self.generate_pbar(iteration)), end='')
+        sys.stdout.flush()
         # Print New Line on Complete
         if iteration == self.__total:
             print()
