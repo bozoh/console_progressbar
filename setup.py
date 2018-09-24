@@ -19,7 +19,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='console_progressbar',
-    version=import_module('console_progressbar').__version__,  
+    version=import_module('console_progressbar').__version__,
     description='A simple progress bar for console',
     long_description=long_description,
     url='https://github.com/bozoh/console_progressbar',
@@ -28,7 +28,7 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     license = 'MIT',
     keywords='progressbar console',
-    python_requires='>=3.5',
+    python_requires='>=2.7',
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
     classifiers=[
@@ -43,6 +43,6 @@ setup(
         'Topic :: Utilities'],
     extras_require={
         'dev': ['check-manifest'],
-        'test': ['coverage'],
+        'test': ['coverage', 'mock'],
     },
 )

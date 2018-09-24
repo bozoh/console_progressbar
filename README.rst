@@ -1,5 +1,8 @@
 .. image:: https://api.travis-ci.org/bozoh/console_progressbar.svg?branch=master
     :target: https://travis-ci.org/bozoh/console_progressbar
+    
+.. image:: https://badge.fury.io/py/console-progressbar.svg
+    :target: https://badge.fury.io/py/console-progressbar
 
 ====================
 Console Progress Bar
@@ -17,7 +20,7 @@ Here a very simple sample:
     import time
     from console_progressbar import ProgressBar
 
-    pb = ProgressBar(total=100,prefix='Here', suffix='Now', decimals=3, length=50, fill='X')
+    pb = ProgressBar(total=100,prefix='Here', suffix='Now', decimals=3, length=50, fill='X', zfill='-')
     pb.print_progress_bar(2)
     time.sleep(5)
     pb.print_progress_bar(25)
@@ -40,3 +43,4 @@ params::
     decimals    - Optional  : positive number of decimals in percent complete (Int)
     length      - Optional  : character length of bar (Int)
     fill        - Optional  : bar fill character (Str)
+    zfill       - Optional  : bar zero fill character (Str)
