@@ -17,8 +17,9 @@ class ProgressBar(object):
         length      - Optional  : character length of bar (Int)
         fill        - Optional  : bar fill character (Str)
         zfill       - Optional  : bar zero fill character (Str)
+        file        - Optional  : output file (Stream)
     """
-    def __init__(self, total, prefix='', suffix='', decimals=1, length=100, fill='█', zfill='-'):
+    def __init__(self, total, prefix='', suffix='', decimals=1, length=100, fill='█', zfill='-', file=sys.stdout):
         self.__prefix = prefix
         self.__suffix = suffix
         self.__decimals = decimals
@@ -27,6 +28,7 @@ class ProgressBar(object):
         self.__zfill = zfill
         self.__total = total
         self.__iteration = 0
+        self.__file = file
 
     def generate_pbar(self, iteration):
         """
@@ -47,11 +49,11 @@ class ProgressBar(object):
         @params:
         iteration   - Required  : current iteration (Int)
         """
-        print('\r%s' % (self.generate_pbar(iteration)), end='')
-        sys.stdout.flush()
+        print('\r%s' % (self.generate_pbar(iteration)), end='', file=self.__file)
+        self.__file.flush()
         # Print New Line on Complete
         if iteration == self.__total:
-            print()
+            print(file=self.__file)
 
     def next(self):
         """Print next interation progress bar
