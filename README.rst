@@ -44,3 +44,4 @@ params::
     length      - Optional  : character length of bar (Int)
     fill        - Optional  : bar fill character (Str)
     zfill       - Optional  : bar zero fill character (Str)
+    file        - Optional  : output file (Stream)
