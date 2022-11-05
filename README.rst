@@ -1,5 +1,5 @@
-.. image:: https://api.travis-ci.org/bozoh/console_progressbar.svg?branch=master
-    :target: https://travis-ci.org/bozoh/console_progressbar
+.. image:: https://api.travis-ci.com/bozoh/console_progressbar.svg?branch=master
+    :target: https://travis-ci.com/bozoh/console_progressbar
     
 .. image:: https://badge.fury.io/py/console-progressbar.svg
     :target: https://badge.fury.io/py/console-progressbar
