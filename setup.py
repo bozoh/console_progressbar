@@ -42,6 +42,7 @@ setup(
         'Topic :: Utilities'],
     extras_require={
         'dev': ['check-manifest'],
-        'testing': ['pytest', 'coverage', 'mock']
+        'test': ['pytest', 'coverage', 'mock'],
+        'testing': ['pytest', 'coverage', 'mock'],
     },
 )
