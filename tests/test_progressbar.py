@@ -6,7 +6,7 @@ from unittest import TestCase
 from console_progressbar import ProgressBar
 
 
-class TestConsoleProgressBar(TestCase):
+class TestConsoleProgressBar(unittest.TestCase):
     def setUp(self):
         self.total = 100
 
@@ -56,18 +56,18 @@ class TestConsoleProgressBar(TestCase):
     def test_it_has_custom_decimals_places(self):
         pb = ProgressBar(98, decimals = 1)
         # 100*42/98 = 42,85714285714285714286
-        # self.assertRegexpMatches(pb.generate_pbar(42),r'\.\d{1}\%')
-        # self.assertNotRegexpMatches(pb.generate_pbar(42),r'\.\d{2}\%')
-        # self.assertNotRegexpMatches(pb.generate_pbar(42),r'\.\d{3}\%')
-        self.assertRegexpMatches(pb.generate_pbar(42),r'\.\d{1}\%')
-        self.assertNotRegexpMatches(pb.generate_pbar(42),r'\.\d{2}\%')
-        self.assertNotRegexpMatches(pb.generate_pbar(42),r'\.\d{3}\%')
+        # self.assertRegex(pb.generate_pbar(42),r'\.\d{1}\%')
+        # self.assertNotRegex(pb.generate_pbar(42),r'\.\d{2}\%')
+        # self.assertNotRegex(pb.generate_pbar(42),r'\.\d{3}\%')
+        self.assertRegex(pb.generate_pbar(42),r'\.\d{1}\%')
+        self.assertNotRegex(pb.generate_pbar(42),r'\.\d{2}\%')
+        self.assertNotRegex(pb.generate_pbar(42),r'\.\d{3}\%')
         pb = ProgressBar(98, decimals = 2)
-        self.assertNotRegexpMatches(pb.generate_pbar(42),r'\.\d{1}\%')
-        self.assertRegexpMatches(pb.generate_pbar(42),r'\.\d{2}\%')
-        self.assertNotRegexpMatches(pb.generate_pbar(42),r'\.\d{3}\%')
+        self.assertNotRegex(pb.generate_pbar(42),r'\.\d{1}\%')
+        self.assertRegex(pb.generate_pbar(42),r'\.\d{2}\%')
+        self.assertNotRegex(pb.generate_pbar(42),r'\.\d{3}\%')
         pb = ProgressBar(98, decimals = 3)
-        self.assertNotRegexpMatches(pb.generate_pbar(42),r'\.\d{1}\%')
-        self.assertNotRegexpMatches(pb.generate_pbar(42),r'\.\d{2}\%')
-        self.assertRegexpMatches(pb.generate_pbar(42),r'\.\d{3}\%')
+        self.assertNotRegex(pb.generate_pbar(42),r'\.\d{1}\%')
+        self.assertNotRegex(pb.generate_pbar(42),r'\.\d{2}\%')
+        self.assertRegex(pb.generate_pbar(42),r'\.\d{3}\%')
 
