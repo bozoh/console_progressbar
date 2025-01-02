@@ -6,7 +6,7 @@ from unittest import TestCase
 from console_progressbar import ProgressBar
 
 
-class TestConsoleProgressBar(unittest.TestCase):
+class TestConsoleProgressBar(TestCase):
     def setUp(self):
         self.total = 100
 
