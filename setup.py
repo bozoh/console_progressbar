@@ -30,7 +30,6 @@ setup(
     keywords='progressbar console',
     python_requires='>=2.7',
     setup_requires=['pytest-runner'],
-    tests_require=['pytest'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
@@ -43,6 +42,6 @@ setup(
         'Topic :: Utilities'],
     extras_require={
         'dev': ['check-manifest'],
-        'test': ['coverage', 'mock'],
+        'testing': ['pytest', 'coverage', 'mock']
     },
 )
